@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Saroj Gurung" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saroj Gurung</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.png"
+      type="image/svg+xml"
+    />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("tLLupmLsdOb9i8ytZ");
+      })();
+    </script>
+
+    <link
+      href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+    <style>
+      .toast {
+        background-color: #2ecc71;
+      }
+    </style>
+  </head>
+
+  <body id="top" class="dark_theme">
+    <script>
+      $(function () {
+        $("#myForm").submit(function (e) {
+          e.preventDefault();
+
+          toastr.success("Your Mail Sent Successfully!", "Thankyou", {
+            progressBar: true,
+            timeOut: 5000,
+            extendedTimeOut: 1000,
+            positionClass: "toast-top-right",
+          });
+        });
+      });
+    </script>
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <h1 class="h1 logo">
+          <a href="#">Saroj<span>.</span></a>
+        </h1>
+
+        <div class="navbar-actions">
+          <select name="language" id="lang">
+            <option value="en">En</option>
+          </select>
+
+          <button
+            class="theme-btn"
+            aria-label="Change Theme"
+            title="Change Theme"
+            data-theme-btn
+          >
+            <span class="icon"></span>
+          </button>
+        </div>
+
+        <button
+          class="nav-toggle-btn"
+          aria-label="Toggle Menu"
+          title="Toggle Menu"
+          data-nav-toggle-btn
+        >
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="#home" class="navbar-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#about" class="navbar-link">About</a>
+            </li>
+
+            <li>
+              <a href="#skills" class="navbar-link">Skills</a>
+            </li>
+
+            <li>
+              <a href="#github" class="navbar-link">Github Stats</a>
+            </li>
+
+            <li>
+              <a href="#portfolio" class="navbar-link">Blogs</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article class="container">
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="hero" id="home">
+          <figure class="hero-banner">
+            <picture>
+              <!-- <source
+                srcset="./assets/images/hero-banner-md.png"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./assets/images/hero-banner-sm.png"
+                media="(min-width: 500px)"
+              /> -->
+              <img
+                src="./assets/images/saroj.png"
+                alt="A man in a blue shirt with a happy expression"
+                class="w-100"
+              />
+            </picture>
+          </figure>
+
+          <div class="hero-content">
+            <h2 class="h2 hero-title">I am a Front-End Developer</h2>
+
+            <a href="#contact" class="btn btn-primary">Get in touch</a>
+          </div>
+
+          <ul class="hero-social-list">
+            <li>
+              <a
+                href="https://www.facebook.com/profile.php?id=100069529807742"
+                class="hero-social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-facebook"></ion-icon>
+
+                <div class="tooltip">Facebook</div>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://twitter.com/saroj_gurung98k"
+                class="hero-social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-twitter"></ion-icon>
+
+                <div class="tooltip">Twitter</div>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.linkedin.com/in/saroj-gurung-00922327a/"
+                class="hero-social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+
+                <div class="tooltip">Linkedin</div>
+              </a>
+            </li>
+          </ul>
+
+          <a href="#stats" class="scroll-down">Scroll</a>
+        </section>
+
+        <!-- 
+        - #STATS
+      -->
+
+        <section class="stats" id="stats">
+          <ul class="stats-list">
+            <li data-aos="fade-right">
+              <div class="stats-card">
+                <lord-icon
+                  src="https://cdn.lordicon.com/uaetnrqo.json"
+                  trigger="loop"
+                  strokr="bold"
+                  style="width: 70px; height: 70px"
+                >
+                </lord-icon>
+
+                <h2 class="h2 card-title">
+                  3+ <strong>Months of Experience</strong>
+                </h2>
+
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </div>
+            </li>
+
+            <li data-aos="fade-up">
+              <div class="stats-card">
+                <lord-icon
+                  src="https://cdn.lordicon.com/ujxzdfjx.json"
+                  trigger="loop"
+                  stroke="bold"
+                  colors="primary:#ff335f,secondary:#ebe6ef"
+                  style="width: 70px; height: 70px"
+                >
+                </lord-icon>
+
+                <h2 class="h2 card-title">
+                  10+ <strong>Completed Projects</strong>
+                </h2>
+
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </div>
+            </li>
+
+            <li data-aos="fade-left">
+              <div class="stats-card">
+                <lord-icon
+                  src="https://cdn.lordicon.com/piolrlvu.json"
+                  trigger="loop"
+                  style="width: 70px; height: 70px"
+                >
+                </lord-icon>
+
+                <h2 class="h2 card-title">0 <strong>Happy Clients</strong></h2>
+
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- 
+        - #ABOUT
+      -->
+
+        <section class="about" id="about">
+          <lord-icon
+            src="https://cdn.lordicon.com/rnvjhobj.json"
+            trigger="loop"
+            colors="primary:#ff335f,secondary:#ffc738,tertiary:#ebe6ef,quaternary:#4bb3fd,quinary:#3a3347"
+            class="lord-icon"
+            data-aos="fade-down"
+          >
+          </lord-icon>
+
+          <div class="about-content section-content">
+            <p class="section-subtitle">About me</p>
+
+            <h2 class="h3 section-title">
+              Need a Creative Product? I can Help You!
+            </h2>
+
+            <p class="section-text">
+              Hi! I’m Saroj Gurung, and I’m a front-end developer who has
+              passion for building clean web applications with intuitive
+              functionalities. I enjoy the process of turning ideas into reality
+              using creative solutions. I’m always curious about learning new
+              skills, tools, and concepts. In addition to working on various
+              solo full stack projects, I have worked with creative teams, which
+              involves daily stand-ups and communications, source control, and
+              project management.
+            </p>
+
+            <div class="btn-group">
+              <a href="./assets/images/Saroj Gurung CV.jpg" download>
+                <button class="btn btn-primary">Download cv</button>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #SKILLS
+      -->
+
+        <section class="skills" id="skills">
+          <div class="skills-content section-content">
+            <p class="section-subtitle">My skills</p>
+
+            <h2 class="h3 section-title">
+              What My Programming Skills Included?
+            </h2>
+
+            <p class="section-text">
+              I develop simple, intuitive and responsive user interface that
+              helps users get things done with less effort and time with those
+              technologies.
+            </p>
+
+            <div class="skills-toggle" data-toggle-box>
+              <button class="toggle-btn active" data-toggle-btn>Skills</button>
+
+              <button class="toggle-btn" data-toggle-btn>Tools</button>
+            </div>
+          </div>
+
+          <div class="skills-box" data-skills-box>
+            <ul class="skills-list">
+              <li>
+                <div class="skill-card" data-aos="fade-up">
+                  <div class="tooltip">HTML5</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/html5.png" alt="HTML5 logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card" data-aos="fade-up">
+                  <div class="tooltip">CSS3</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/css3.png" alt="CSS3 logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card" data-aos="fade-up">
+                  <div class="tooltip">JavaScript</div>
+
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/javascript.png"
+                      alt="JavaScript logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card" data-aos="fade-up">
+                  <div class="tooltip">TypeScript</div>
+
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/typescript.png"
+                      alt="TypeScript logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card" data-aos="fade-up">
+                  <div class="tooltip">C Language</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/c.png" alt="C Language logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card" data-aos="fade-up">
+                  <div class="tooltip">Bootstrap</div>
+
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/bootstrap.png"
+                      alt="Bootstrap logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card" data-aos="fade-up">
+                  <div class="tooltip">Flowbite</div>
+
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/flowbite.png"
+                      alt="Flowbite logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card" data-aos="fade-up">
+                  <div class="tooltip">React</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/react.png" alt="React logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card" data-aos="fade-up">
+                  <div class="tooltip">Next.JS</div>
+
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/nextjs.256x256.png"
+                      alt="Next.JS logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card" data-aos="fade-up">
+                  <div class="tooltip">TanStack Query</div>
+
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/query.png"
+                      alt="TanStack Query logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card" data-aos="fade-up">
+                  <div class="tooltip">Tailwind CSS</div>
+
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/Tailwindcss.png"
+                      alt="Tailwind CSS logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card" data-aos="fade-up">
+                  <div class="tooltip">Zustand</div>
+
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/Untitled design (5).png"
+                      alt="SASS logo"
+                    />
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="tools-list">
+              <li>
+                <div class="skill-card" data-aos="fade-up">
+                  <div class="tooltip">Figma</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/Figma.png" alt="Figma logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card" data-aos="fade-up">
+                  <div class="tooltip">Github</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/github.png" alt="Github logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card" data-aos="fade-up">
+                  <div class="tooltip">React Spring</div>
+
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/react-spring.png"
+                      alt="React Spring logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card" data-aos="fade-up">
+                  <div class="tooltip">Git</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/git.png" alt="Git logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card" data-aos="fade-up">
+                  <div class="tooltip">Npm</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/npm.png" alt="Npm logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card" data-aos="fade-up">
+                  <div class="tooltip">Command Line</div>
+
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/command.png"
+                      alt="Command Line logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card" data-aos="fade-up">
+                  <div class="tooltip">VS Code</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/vs-code.png" alt="VS Code logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card" data-aos="fade-up">
+                  <div class="tooltip">Canva</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/canva.png" alt="Canva logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card" data-aos="fade-up">
+                  <div class="tooltip">Git Bash</div>
+
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/git-bash.png"
+                      alt="Git Bash logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card" data-aos="fade-up">
+                  <div class="tooltip">Apollo Client</div>
+
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/apollo-client.png"
+                      alt="Apollo Client logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card" data-aos="fade-up">
+                  <div class="tooltip">Photoshop</div>
+
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/photoshop.png"
+                      alt="Photoshop logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card" data-aos="fade-up">
+                  <div class="tooltip">Adobe XD</div>
+
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/adobe-xd.png"
+                      alt="Adobe XD logo"
+                    />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #GITHUB STATS
+      -->
+        <div id="github">
+          <section class="skills" id="skills">
+            <div class="skills-content section-content">
+              <p class="section-subtitle">Github Stats</p>
+
+              <h2 class="h3 section-title">My Github Stats!</h2>
+
+              <p class="section-text">
+                I'm passionate about crafting simple, intuitive, and responsive
+                user interfaces that empower users to accomplish tasks
+                effortlessly. My mission is to streamline user experiences,
+                saving valuable time and effort. Here's a glimpse into my GitHub
+                stats:
+              </p>
+            </div>
+            <img
+              src="https://github-readme-stats.vercel.app/api/top-langs?username=saroj123-del&show_icons=true&locale=en&layout=compact"
+              alt="Saroj Gurung"
+              class="git"
+              data-aos="zoom-in"
+            />
+            <img
+              src="https://github-readme-stats.vercel.app/api?username=saroj123-del&show_icons=true&locale=en"
+              alt="Saroj Gurung"
+              class="git"
+              data-aos="zoom-in"
+            />
+            <img
+              src="https://github-readme-streak-stats.herokuapp.com/?user=saroj123-del&"
+              alt="Saroj Gurung"
+              class="git"
+              data-aos="zoom-in"
+            />
+          </section>
+        </div>
+        <!-- 
+        - #BLOGS
+      -->
+
+        <section class="project" id="portfolio">
+          <ul class="project-list">
+            <li>
+              <div class="project-content section-content">
+                <p class="section-subtitle">My Blogs</p>
+
+                <h2 class="h3 section-title">
+                  Read My Blogs Which Will Amaze You!
+                </h2>
+
+                <p class="section-text">
+                  I develop the best quality website that serves for the
+                  long-term. Well-documented, clean, easy and elegant interface
+                  helps any non-technical clients.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up">
+              <a
+                href="https://medium.com/@gurungsaroj98k/mastering-ui-animation-with-react-spring-9342f03a086d"
+                class="project-card"
+                target="_blank"
+              >
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/react'.png"
+                    class="w-100"
+                    alt="A macintosh on a yellow background."
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">React Spring</h3>
+
+                  <time class="publish-date" datetime="2022-04"
+                    >November 2023</time
+                  >
+                </div>
+              </a>
+            </li>
+
+            <li data-aos="fade-up">
+              <a
+                href="https://medium.com/@gurungsaroj98k/elevate-your-react-uis-with-chakra-ui-a-deep-dive-f8ccc714a6d7"
+                class="project-card"
+                target="_blank"
+              >
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/chakra.png"
+                    class="w-100"
+                    alt="On a Blue background, a Wacom and a mouse."
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Chakra UI</h3>
+
+                  <time class="publish-date" datetime="2022-04"
+                    >November 2023</time
+                  >
+                </div>
+              </a>
+            </li>
+
+            <li data-aos="fade-up">
+              <a
+                href="https://medium.com/@gurungsaroj98k/flowbite-a4e888cf79e7"
+                class="project-card"
+                target="_blank"
+              >
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/bite.png"
+                    class="w-100"
+                    alt="A Cassette tape on a mellow apricot background."
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Flowbite</h3>
+
+                  <time class="publish-date" datetime="2022-04"
+                    >November 2023</time
+                  >
+                </div>
+              </a>
+            </li>
+
+            <li data-aos="fade-up">
+              <a
+                href="https://medium.com/@gurungsaroj98k/introduction-to-github-5c449807fc6d"
+                class="project-card"
+                target="_blank"
+              >
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/Untitled design (4).png"
+                    class="w-100"
+                    alt="Blue digital watch on a dark liver background."
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Github</h3>
+
+                  <time class="publish-date" datetime="2022-04"
+                    >November 2023</time
+                  >
+                </div>
+              </a>
+            </li>
+
+            <li data-aos="fade-up">
+              <a
+                href="https://medium.com/@gurungsaroj98k/tanstack-query-6f1c7e517961"
+                class="project-card"
+                target="_blank"
+              >
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/query2.png"
+                    class="w-100"
+                    alt="On a dark liver background, Airport luggage car carrying a luggage."
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">React Query</h3>
+
+                  <time class="publish-date" datetime="2022-04"
+                    >October 2023</time
+                  >
+                </div>
+              </a>
+            </li>
+
+            <li data-aos="fade-up">
+              <a
+                href="https://medium.com/@gurungsaroj98k/mastering-the-art-of-styling-with-tailwind-css-4cc087fa8c30"
+                class="project-card"
+                target="_blank"
+              >
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/Tailwind CSS.png"
+                    class="w-100"
+                    alt="On a yellow background, a digital watch and a glass."
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Tailwind CSS</h3>
+
+                  <time class="publish-date" datetime="2022-04"
+                    >November 2023</time
+                  >
+                </div>
+              </a>
+            </li>
+
+            <li data-aos="fade-up">
+              <a
+                href="https://medium.com/@gurungsaroj98k/zustand-4d567c1f4b99"
+                class="project-card"
+                target="_blank"
+              >
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/z.png"
+                    class="w-100"
+                    alt="A fujifilm instant camera on a dark electric blue background."
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Zustand</h3>
+
+                  <time class="publish-date" datetime="2022-04"
+                    >October 2023</time
+                  >
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- 
+        - #CONTACT
+      -->
+
+        <section class="contact" id="contact">
+          <div class="contact-content section-content">
+            <p class="section-subtitle">Contact</p>
+
+            <h2 class="h3 section-title">
+              Have You Any Project? Please Drop a Message
+            </h2>
+
+            <p class="section-text">
+              Get in touch and let me know how i can help. Fill out the form and
+              i’ll be in touch as soon as possible.
+            </p>
+
+            <ul class="contact-list">
+              <li class="contact-list-item">
+                <div class="contact-item-icon">
+                  <ion-icon name="location-outline"></ion-icon>
+                </div>
+
+                <div class="wrapper">
+                  <h3 class="h4 contact-item-title">Address:</h3>
+
+                  <address class="contact-info">
+                    Devdaha-5, Khaireni, Rupandehi, Nepal
+                  </address>
+                </div>
+              </li>
+
+              <li class="contact-list-item">
+                <div class="contact-item-icon">
+                  <ion-icon name="call-outline"></ion-icon>
+                </div>
+
+                <div class="wrapper">
+                  <h3 class="h4 contact-item-title">Phone:</h3>
+
+                  <a href="tel:9703372025" class="contact-info"
+                    >+977 9703372025</a
+                  >
+                </div>
+              </li>
+
+              <li class="contact-list-item">
+                <div class="contact-item-icon">
+                  <ion-icon name="mail-outline"></ion-icon>
+                </div>
+
+                <div class="wrapper">
+                  <h3 class="h4 contact-item-title">Email:</h3>
+
+                  <a href="mailto:gurungsaroj98k@gmail.com" class="contact-info"
+                    >gurungsaroj98k@gmail.com</a
+                  >
+                </div>
+              </li>
+
+              <li>
+                <ul class="contac-social-list">
+                  <li>
+                    <a
+                      href="https://www.facebook.com/profile.php?id=100069529807742"
+                      class="contact-social-link"
+                      target="_blank"
+                    >
+                      <div class="tooltip">Facebook</div>
+
+                      <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://twitter.com/saroj_gurung98k"
+                      class="contact-social-link"
+                      target="_blank"
+                    >
+                      <div class="tooltip">Twitter</div>
+
+                      <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/saroj-gurung-00922327a/"
+                      class="contact-social-link"
+                      target="_blank"
+                    >
+                      <div class="tooltip">Linkedin</div>
+
+                      <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.instagram.com/_whois_sarojgurung_/"
+                      class="contact-social-link"
+                      target="_blank"
+                    >
+                      <div class="tooltip">Instagram</div>
+
+                      <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <form
+            id="myForm"
+            class="contact-form"
+            data-aos="fade-down"
+            onsubmit="event.preventDefault(); sendMail();"
+          >
+            <div class="form-wrapper">
+              <label for="name" class="form-label">Name</label>
+
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  id="name"
+                  required
+                  placeholder="e.g John Doe"
+                  class="input-field"
+                  autocomplete="off"
+                />
+
+                <ion-icon name="person-circle"></ion-icon>
+              </div>
+            </div>
+
+            <div class="form-wrapper">
+              <label for="email" class="form-label">Email</label>
+
+              <div class="input-wrapper">
+                <input
+                  type="email"
+                  id="email"
+                  required
+                  placeholder="e.g johndoe@mail.com"
+                  class="input-field"
+                  autocomplete="off"
+                />
+
+                <ion-icon name="mail"></ion-icon>
+              </div>
+            </div>
+
+            <div class="form-wrapper">
+              <label for="phone" class="form-label">Phone</label>
+
+              <div class="input-wrapper">
+                <input
+                  type="tel"
+                  id="phone"
+                  required
+                  placeholder="Phone Number"
+                  class="input-field"
+                  autocomplete="off"
+                />
+
+                <ion-icon name="call"></ion-icon>
+              </div>
+            </div>
+
+            <div class="form-wrapper">
+              <label for="message" class="form-label">Message</label>
+
+              <div class="input-wrapper">
+                <textarea
+                  id="message"
+                  required
+                  placeholder="Write message..."
+                  class="input-field"
+                  autocomplete="off"
+                ></textarea>
+
+                <ion-icon name="chatbubbles"></ion-icon>
+              </div>
+            </div>
+
+            <button class="btn btn-primary" id="submitButton">Send</button>
+          </form>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <p class="h1 logo">
+          <a href="#"> Saroj Gurung<span>.</span> </a>
+        </p>
+
+        <div class="copyright">Made With &#10084; by Saroj Gurung</div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #GO TO TOP
+  -->
+
+    <a href="#top" class="go-top" data-go-top title="Go to Top">
+      <ion-icon name="arrow-up"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: false,
+        disable: function () {
+          var maxWidth = 768;
+          return window.innerWidth < maxWidth;
+        },
+      });
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
+    <script src="https://unpkg.com/kursor"></script>
+    <script>
+      new kursor({
+        type: 1,
+        removeDefaultCursor: true,
+        color: "#ff553f",
+      });
+    </script>
+  </body>
+</html>
