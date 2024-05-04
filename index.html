@@ -34,16 +34,6 @@
       rel="stylesheet"
     />
 
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("tLLupmLsdOb9i8ytZ");
-      })();
-    </script>
-
     <link
       href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"
       rel="stylesheet"
@@ -62,21 +52,6 @@
   </head>
 
   <body id="top" class="dark_theme">
-    <script>
-      $(function () {
-        $("#myForm").submit(function (e) {
-          e.preventDefault();
-
-          toastr.success("Your Mail Sent Successfully!", "Thankyou", {
-            progressBar: true,
-            timeOut: 5000,
-            extendedTimeOut: 1000,
-            positionClass: "toast-top-right",
-          });
-        });
-      });
-    </script>
-
     <!-- 
     - #HEADER
   -->
@@ -88,10 +63,6 @@
         </h1>
 
         <div class="navbar-actions">
-          <select name="language" id="lang">
-            <option value="en">En</option>
-          </select>
-
           <button
             class="theme-btn"
             aria-label="Change Theme"
@@ -152,14 +123,6 @@
         <section class="hero" id="home">
           <figure class="hero-banner">
             <picture>
-              <!-- <source
-                srcset="./assets/images/hero-banner-md.png"
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="./assets/images/hero-banner-sm.png"
-                media="(min-width: 500px)"
-              /> -->
               <img
                 src="./assets/images/saroj.png"
                 alt="A man in a blue shirt with a happy expression"
@@ -390,22 +353,12 @@
 
               <li>
                 <div class="skill-card" data-aos="fade-up">
-                  <div class="tooltip">C Language</div>
-
-                  <div class="card-icon">
-                    <img src="./assets/images/c.png" alt="C Language logo" />
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill-card" data-aos="fade-up">
-                  <div class="tooltip">Bootstrap</div>
+                  <div class="tooltip">Mongodb</div>
 
                   <div class="card-icon">
                     <img
-                      src="./assets/images/bootstrap.png"
-                      alt="Bootstrap logo"
+                      src="./assets/images/mongodb.svg#"
+                      alt="Mongodb logo"
                     />
                   </div>
                 </div>
@@ -413,13 +366,20 @@
 
               <li>
                 <div class="skill-card" data-aos="fade-up">
-                  <div class="tooltip">Flowbite</div>
+                  <div class="tooltip">MySQL</div>
 
                   <div class="card-icon">
-                    <img
-                      src="./assets/images/flowbite.png"
-                      alt="Flowbite logo"
-                    />
+                    <img src="./assets/images/sql.svg" alt="MySQL logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card" data-aos="fade-up">
+                  <div class="tooltip">Node JS</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/nodejs.svg" alt="NodeJS logo" />
                   </div>
                 </div>
               </li>
@@ -462,25 +422,22 @@
 
               <li>
                 <div class="skill-card" data-aos="fade-up">
-                  <div class="tooltip">Tailwind CSS</div>
+                  <div class="tooltip">Prisma</div>
 
                   <div class="card-icon">
-                    <img
-                      src="./assets/images/Tailwindcss.png"
-                      alt="Tailwind CSS logo"
-                    />
+                    <img src="./assets/images/prisma.svg" alt="Prisma logo" />
                   </div>
                 </div>
               </li>
 
               <li>
                 <div class="skill-card" data-aos="fade-up">
-                  <div class="tooltip">Zustand</div>
+                  <div class="tooltip">Express JS</div>
 
                   <div class="card-icon">
                     <img
-                      src="./assets/images/Untitled design (5).png"
-                      alt="SASS logo"
+                      src="./assets/images/express.svg"
+                      alt="Express JS logo"
                     />
                   </div>
                 </div>
@@ -543,12 +500,22 @@
 
               <li>
                 <div class="skill-card" data-aos="fade-up">
-                  <div class="tooltip">Command Line</div>
+                  <div class="tooltip">Zustand</div>
+
+                  <div class="card-icon">
+                    <img src="./assets/images/zustand.png" alt="Zustand logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card" data-aos="fade-up">
+                  <div class="tooltip">Tailwind Css</div>
 
                   <div class="card-icon">
                     <img
-                      src="./assets/images/command.png"
-                      alt="Command Line logo"
+                      src="./assets/images/Tailwindcss.png"
+                      alt="Tailwind Css logo"
                     />
                   </div>
                 </div>
@@ -556,20 +523,10 @@
 
               <li>
                 <div class="skill-card" data-aos="fade-up">
-                  <div class="tooltip">VS Code</div>
+                  <div class="tooltip">Zod</div>
 
                   <div class="card-icon">
-                    <img src="./assets/images/vs-code.png" alt="VS Code logo" />
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill-card" data-aos="fade-up">
-                  <div class="tooltip">Canva</div>
-
-                  <div class="card-icon">
-                    <img src="./assets/images/canva.png" alt="Canva logo" />
+                    <img src="./assets/images/zod.svg" alt="Zod logo" />
                   </div>
                 </div>
               </li>
@@ -579,10 +536,7 @@
                   <div class="tooltip">Git Bash</div>
 
                   <div class="card-icon">
-                    <img
-                      src="./assets/images/git-bash.png"
-                      alt="Git Bash logo"
-                    />
+                    <img src="./assets/images/git.png" alt="Git Bash logo" />
                   </div>
                 </div>
               </li>
@@ -602,12 +556,12 @@
 
               <li>
                 <div class="skill-card" data-aos="fade-up">
-                  <div class="tooltip">Photoshop</div>
+                  <div class="tooltip">Bootstrap</div>
 
                   <div class="card-icon">
                     <img
-                      src="./assets/images/photoshop.png"
-                      alt="Photoshop logo"
+                      src="./assets/images/bootstrap.png"
+                      alt="Bootstrap logo"
                     />
                   </div>
                 </div>
@@ -615,12 +569,12 @@
 
               <li>
                 <div class="skill-card" data-aos="fade-up">
-                  <div class="tooltip">Adobe XD</div>
+                  <div class="tooltip">Flowbite</div>
 
                   <div class="card-icon">
                     <img
-                      src="./assets/images/adobe-xd.png"
-                      alt="Adobe XD logo"
+                      src="./assets/images/flowbite.png"
+                      alt="Flowbite logo"
                     />
                   </div>
                 </div>
@@ -977,8 +931,14 @@
             id="myForm"
             class="contact-form"
             data-aos="fade-down"
-            onsubmit="event.preventDefault(); sendMail();"
+            action="https://api.web3forms.com/submit"
+            method="POST"
           >
+            <input
+              type="hidden"
+              name="access_key"
+              value="c2f1bfe4-272a-4036-a092-287ea438a7f4"
+            />
             <div class="form-wrapper">
               <label for="name" class="form-label">Name</label>
 
@@ -986,6 +946,7 @@
                 <input
                   type="text"
                   id="name"
+                  name="name"
                   required
                   placeholder="e.g John Doe"
                   class="input-field"
@@ -1003,6 +964,7 @@
                 <input
                   type="email"
                   id="email"
+                  name="email"
                   required
                   placeholder="e.g johndoe@mail.com"
                   class="input-field"
@@ -1020,6 +982,7 @@
                 <input
                   type="tel"
                   id="phone"
+                  name="phone"
                   required
                   placeholder="Phone Number"
                   class="input-field"
@@ -1036,6 +999,7 @@
               <div class="input-wrapper">
                 <textarea
                   id="message"
+                  name="message"
                   required
                   placeholder="Write message..."
                   class="input-field"
@@ -1046,7 +1010,7 @@
               </div>
             </div>
 
-            <button class="btn btn-primary" id="submitButton">Send</button>
+            <button class="btn btn-primary" type="submit">Send</button>
           </form>
         </section>
       </article>
