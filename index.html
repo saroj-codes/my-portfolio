@@ -42,9 +42,72 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
-    <style>
+    <!-- <style>
       .toast {
         background-color: #2ecc71;
+      }
+    </style> -->
+    <style>
+      .language {
+        position: absolute;
+        animation: float 15s infinite ease-in-out;
+        opacity: 0.7;
+        z-index: 1;
+      }
+      @keyframes float {
+        0%,
+        100% {
+          transform: translate(0, 0);
+        }
+        25% {
+          transform: translate(50px, 50px);
+        }
+        50% {
+          transform: translate(-50px, 100px);
+        }
+        75% {
+          transform: translate(-100px, -50px);
+        }
+      }
+      #js {
+        top: 10%;
+        left: 20%;
+        animation-delay: 0s;
+      }
+      #python {
+        top: 70%;
+        left: 80%;
+        animation-delay: -2s;
+      }
+      #java {
+        top: 40%;
+        left: 70%;
+        animation-delay: -4s;
+      }
+      #cpp {
+        top: 80%;
+        left: 30%;
+        animation-delay: -6s;
+      }
+      #ruby {
+        top: 30%;
+        left: 10%;
+        animation-delay: -8s;
+      }
+      #go {
+        top: 60%;
+        left: 60%;
+        animation-delay: -10s;
+      }
+      #swift {
+        top: 20%;
+        left: 50%;
+        animation-delay: -12s;
+      }
+      #kotlin {
+        top: 50%;
+        left: 40%;
+        animation-delay: -14s;
       }
     </style>
   </head>
@@ -128,9 +191,24 @@
               />
             </picture>
           </figure>
-
+          <!-- <div class="container1">
+            <img
+              src="./assets/images/html.svg"
+              id="js"
+              class="language"
+              alt="HTML5 logo"
+            /> -->
+          <!-- <div id="js" class="language">JavaScript</div> -->
+          <!-- <div id="python" class="language">Python</div>
+            <div id="java" class="language">Java</div>
+            <div id="cpp" class="language">C++</div>
+            <div id="ruby" class="language">Ruby</div>
+            <div id="go" class="language">Go</div>
+            <div id="swift" class="language">Swift</div>
+            <div id="kotlin" class="language">Kotlin</div>
+          </div> -->
           <div class="hero-content">
-            <h2 class="h2 hero-title">I am a Front-End Developer</h2>
+            <h2 class="h2 hero-title">I am a Full-Stack Developer</h2>
 
             <a href="#contact" class="btn btn-primary">Get in touch</a>
           </div>
@@ -193,7 +271,7 @@
                 </lord-icon>
 
                 <h2 class="h2 card-title">
-                  8+ <strong>Months of Experience</strong>
+                  14+ <strong>Months of Experience</strong>
                 </h2>
 
                 <ion-icon name="chevron-forward-outline"></ion-icon>
@@ -308,7 +386,7 @@
                   <div class="skill-card" data-aos="fade-up">
                     <div class="tooltip">HTML5</div>
                     <div class="card-icon">
-                      <img src="./assets/images/html5.png" alt="HTML5 logo" />
+                      <img src="./assets/images/html.svg" alt="HTML5 logo" />
                     </div>
                   </div>
                 </a>
@@ -319,7 +397,7 @@
                   <div class="skill-card" data-aos="fade-up">
                     <div class="tooltip">CSS3</div>
                     <div class="card-icon">
-                      <img src="./assets/images/css3.png" alt="CSS3 logo" />
+                      <img src="./assets/images/css.svg" alt="CSS3 logo" />
                     </div>
                   </div>
                 </a>
@@ -330,10 +408,7 @@
                   <div class="skill-card" data-aos="fade-up">
                     <div class="tooltip">JavaScript</div>
                     <div class="card-icon">
-                      <img
-                        src="./assets/images/javascript.png"
-                        alt="JavaScript logo"
-                      />
+                      <img src="./assets/images/js.svg" alt="JavaScript logo" />
                     </div>
                   </div>
                 </a>
@@ -344,74 +419,18 @@
                   <div class="skill-card" data-aos="fade-up">
                     <div class="tooltip">TypeScript</div>
                     <div class="card-icon">
-                      <img
-                        src="./assets/images/typescript.png"
-                        alt="TypeScript logo"
-                      />
+                      <img src="./assets/images/ts.svg" alt="TypeScript logo" />
                     </div>
                   </div>
                 </a>
               </li>
-
-              <li>
-                <a href="https://www.mongodb.com/" target="_blank">
-                  <div class="skill-card" data-aos="fade-up">
-                    <div class="tooltip">Mongodb</div>
-                    <div class="card-icon">
-                      <img
-                        src="./assets/images/mongodb.svg#"
-                        alt="Mongodb logo"
-                      />
-                    </div>
-                  </div>
-                </a>
-              </li>
-
-              <li>
-                <a href="https://www.mongodb.com/" target="_blank">
-                  <div class="skill-card" data-aos="fade-up">
-                    <div class="tooltip">MySQL</div>
-                    <div class="card-icon">
-                      <img src="./assets/images/sql.svg" alt="MySQL logo" />
-                    </div>
-                  </div>
-                </a>
-              </li>
-
-              <li>
-                <a href="https://nodejs.org/en" target="_blank">
-                  <div class="skill-card" data-aos="fade-up">
-                    <div class="tooltip">Node JS</div>
-
-                    <div class="card-icon">
-                      <img src="./assets/images/nodejs.svg" alt="NodeJS logo" />
-                    </div>
-                  </div>
-                </a>
-              </li>
-
               <li>
                 <a href="https://react.dev/" target="_blank">
                   <div class="skill-card" data-aos="fade-up">
-                    <div class="tooltip">React</div>
+                    <div class="tooltip">React JS</div>
 
                     <div class="card-icon">
-                      <img src="./assets/images/react.png" alt="React logo" />
-                    </div>
-                  </div>
-                </a>
-              </li>
-
-              <li>
-                <a href="https://nextjs.org/" target="_blank">
-                  <div class="skill-card" data-aos="fade-up">
-                    <div class="tooltip">Next.JS</div>
-
-                    <div class="card-icon">
-                      <img
-                        src="./assets/images/nextjs.256x256.png"
-                        alt="Next.JS logo"
-                      />
+                      <img src="./assets/images/react.svg" alt="React logo" />
                     </div>
                   </div>
                 </a>
@@ -424,7 +443,7 @@
 
                     <div class="card-icon">
                       <img
-                        src="./assets/images/query.png"
+                        src="./assets/images/reactquery.svg"
                         alt="TanStack Query logo"
                       />
                     </div>
@@ -433,12 +452,27 @@
               </li>
 
               <li>
-                <a href="https://www.prisma.io/" target="_blank">
+                <a href="https://nextjs.org/" target="_blank">
                   <div class="skill-card" data-aos="fade-up">
-                    <div class="tooltip">Prisma</div>
+                    <div class="tooltip">Next.JS</div>
 
                     <div class="card-icon">
-                      <img src="./assets/images/prisma.svg" alt="Prisma logo" />
+                      <img
+                        src="./assets/images/nextjs.svg"
+                        alt="Next.JS logo"
+                      />
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://nodejs.org/en" target="_blank">
+                  <div class="skill-card" data-aos="fade-up">
+                    <div class="tooltip">Node JS</div>
+
+                    <div class="card-icon">
+                      <img src="./assets/images/nodejs.svg" alt="NodeJS logo" />
                     </div>
                   </div>
                 </a>
@@ -458,6 +492,55 @@
                   </div>
                 </a>
               </li>
+
+              <li>
+                <a href="https://www.mongodb.com/" target="_blank">
+                  <div class="skill-card" data-aos="fade-up">
+                    <div class="tooltip">Mongodb</div>
+                    <div class="card-icon">
+                      <img src="./assets/images/mongo.svg" alt="Mongodb logo" />
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.mysql.com/" target="_blank">
+                  <div class="skill-card" data-aos="fade-up">
+                    <div class="tooltip">MySQL</div>
+                    <div class="card-icon">
+                      <img src="./assets/images/mysql.svg" alt="MySQL logo" />
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.prisma.io/" target="_blank">
+                  <div class="skill-card" data-aos="fade-up">
+                    <div class="tooltip">Prisma</div>
+
+                    <div class="card-icon">
+                      <img src="./assets/images/prisma.svg" alt="Prisma logo" />
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.docker.com/" target="_blank">
+                  <div class="skill-card" data-aos="fade-up">
+                    <div class="tooltip">Docker</div>
+
+                    <div class="card-icon">
+                      <img
+                        src="./assets/images/docker.svg"
+                        alt="Express JS logo"
+                      />
+                    </div>
+                  </div>
+                </a>
+              </li>
             </ul>
 
             <ul class="tools-list">
@@ -467,7 +550,7 @@
                     <div class="tooltip">Figma</div>
 
                     <div class="card-icon">
-                      <img src="./assets/images/Figma.png" alt="Figma logo" />
+                      <img src="./assets/images/figma.svg" alt="Figma logo" />
                     </div>
                   </div>
                 </a>
@@ -479,125 +562,153 @@
                     <div class="tooltip">Github</div>
 
                     <div class="card-icon">
-                      <img src="./assets/images/github.png" alt="Github logo" />
+                      <img src="./assets/images/github.svg" alt="Github logo" />
                     </div>
                   </div>
                 </a>
               </li>
 
               <li>
-                <div class="skill-card" data-aos="fade-up">
-                  <div class="tooltip">React Spring</div>
+                <a href="https://www.react-spring.dev/" target="_blank">
+                  <div class="skill-card" data-aos="fade-up">
+                    <div class="tooltip">React Spring</div>
 
-                  <div class="card-icon">
-                    <img
-                      src="./assets/images/react-spring.png"
-                      alt="React Spring logo"
-                    />
+                    <div class="card-icon">
+                      <img
+                        src="./assets/images/reactspring.svg"
+                        alt="React Spring logo"
+                      />
+                    </div>
                   </div>
-                </div>
+                </a>
               </li>
 
               <li>
-                <div class="skill-card" data-aos="fade-up">
-                  <div class="tooltip">Git</div>
+                <a href="https://git-scm.com/" target="_blank">
+                  <div class="skill-card" data-aos="fade-up">
+                    <div class="tooltip">Git</div>
 
-                  <div class="card-icon">
-                    <img src="./assets/images/git.png" alt="Git logo" />
+                    <div class="card-icon">
+                      <img src="./assets/images/git.svg" alt="Git logo" />
+                    </div>
                   </div>
-                </div>
+                </a>
               </li>
 
               <li>
-                <div class="skill-card" data-aos="fade-up">
-                  <div class="tooltip">Npm</div>
+                <a href="https://www.npmjs.com/" target="_blank">
+                  <div class="skill-card" data-aos="fade-up">
+                    <div class="tooltip">Npm</div>
 
-                  <div class="card-icon">
-                    <img src="./assets/images/npm.png" alt="Npm logo" />
+                    <div class="card-icon">
+                      <img src="./assets/images/npm.svg" alt="Npm logo" />
+                    </div>
                   </div>
-                </div>
+                </a>
               </li>
 
               <li>
-                <div class="skill-card" data-aos="fade-up">
-                  <div class="tooltip">Zustand</div>
+                <a href="https://zustand-demo.pmnd.rs/" target="_blank">
+                  <div class="skill-card" data-aos="fade-up">
+                    <div class="tooltip">Zustand</div>
 
-                  <div class="card-icon">
-                    <img src="./assets/images/zustand.png" alt="Zustand logo" />
+                    <div class="card-icon">
+                      <img
+                        src="./assets/images/zustand.svg"
+                        alt="Zustand logo"
+                      />
+                    </div>
                   </div>
-                </div>
+                </a>
               </li>
 
               <li>
-                <div class="skill-card" data-aos="fade-up">
-                  <div class="tooltip">Tailwind Css</div>
+                <a href="https://tailwindcss.com/" target="_blank">
+                  <div class="skill-card" data-aos="fade-up">
+                    <div class="tooltip">Tailwind Css</div>
 
-                  <div class="card-icon">
-                    <img
-                      src="./assets/images/Tailwindcss.png"
-                      alt="Tailwind Css logo"
-                    />
+                    <div class="card-icon">
+                      <img
+                        src="./assets/images/tailwind.svg"
+                        alt="Tailwind Css logo"
+                      />
+                    </div>
                   </div>
-                </div>
+                </a>
               </li>
 
               <li>
-                <div class="skill-card" data-aos="fade-up">
-                  <div class="tooltip">Zod</div>
+                <a href="https://zod.dev/" target="_blank">
+                  <div class="skill-card" data-aos="fade-up">
+                    <div class="tooltip">Zod</div>
 
-                  <div class="card-icon">
-                    <img src="./assets/images/zod.svg" alt="Zod logo" />
+                    <div class="card-icon">
+                      <img src="./assets/images/zod.svg" alt="Zod logo" />
+                    </div>
                   </div>
-                </div>
+                </a>
               </li>
 
               <li>
-                <div class="skill-card" data-aos="fade-up">
-                  <div class="tooltip">Git Bash</div>
+                <a
+                  href="https://www.apollographql.com/docs/react/"
+                  target="_blank"
+                >
+                  <div class="skill-card" data-aos="fade-up">
+                    <div class="tooltip">Apollo Client</div>
 
-                  <div class="card-icon">
-                    <img src="./assets/images/git.png" alt="Git Bash logo" />
+                    <div class="card-icon">
+                      <img
+                        src="./assets/images/apollo.svg"
+                        alt="Apollo Client logo"
+                      />
+                    </div>
                   </div>
-                </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://v2.chakra-ui.com/" target="_blank">
+                  <div class="skill-card" data-aos="fade-up">
+                    <div class="tooltip">Chakra UI</div>
+
+                    <div class="card-icon">
+                      <img
+                        src="./assets/images/chakra.svg"
+                        alt="Bootstrap logo"
+                      />
+                    </div>
+                  </div>
+                </a>
               </li>
 
               <li>
-                <div class="skill-card" data-aos="fade-up">
-                  <div class="tooltip">Apollo Client</div>
+                <a href="https://getbootstrap.com/" target="_blank">
+                  <div class="skill-card" data-aos="fade-up">
+                    <div class="tooltip">Bootstrap</div>
 
-                  <div class="card-icon">
-                    <img
-                      src="./assets/images/apollo-client.png"
-                      alt="Apollo Client logo"
-                    />
+                    <div class="card-icon">
+                      <img
+                        src="./assets/images/bootstrap.svg"
+                        alt="Bootstrap logo"
+                      />
+                    </div>
                   </div>
-                </div>
+                </a>
               </li>
 
               <li>
-                <div class="skill-card" data-aos="fade-up">
-                  <div class="tooltip">Bootstrap</div>
+                <a href="https://flowbite.com/" target="_blank">
+                  <div class="skill-card" data-aos="fade-up">
+                    <div class="tooltip">Flowbite</div>
 
-                  <div class="card-icon">
-                    <img
-                      src="./assets/images/bootstrap.png"
-                      alt="Bootstrap logo"
-                    />
+                    <div class="card-icon">
+                      <img
+                        src="./assets/images/flowbite.png"
+                        alt="Flowbite logo"
+                      />
+                    </div>
                   </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="skill-card" data-aos="fade-up">
-                  <div class="tooltip">Flowbite</div>
-
-                  <div class="card-icon">
-                    <img
-                      src="./assets/images/flowbite.png"
-                      alt="Flowbite logo"
-                    />
-                  </div>
-                </div>
+                </a>
               </li>
             </ul>
           </div>
